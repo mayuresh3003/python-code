@@ -1,0 +1,15 @@
+2026-05-09 21:00:01 INFO  [auth-service] User login successful | user_id=101 ip=192.168.1.10
+2026-05-09 21:01:15 WARN  [payment-service] Slow response detected | endpoint=/api/pay latency=1200ms
+2026-05-09 21:02:30 ERROR [db-service] Database connection failed | host=db01 retry=1
+2026-05-09 21:03:05 INFO  [order-service] Order placed successfully | order_id=5001 user_id=101 amount=2500
+2026-05-09 21:04:12 DEBUG [inventory-service] Stock check | product_id=2001 available=50
+2026-05-09 21:05:45 ERROR [payment-service] Transaction failed | txn_id=TX12345 reason=InsufficientFunds
+2026-05-09 21:06:10 INFO  [auth-service] User logout | user_id=101
+2026-05-09 21:07:25 WARN  [api-gateway] High memory usage | usage=85%
+2026-05-09 21:08:40 INFO  [order-service] Order shipped | order_id=5001 courier=BlueDart
+2026-05-09 21:09:55 ERROR [notification-service] Email sending failed | to=user@example.com retry=2
+2026-05-09 21:10:20 DEBUG [cache-service] Cache miss | key=session_101
+2026-05-09 21:11:35 INFO  [user-service] Profile updated | user_id=101 field=email
+2026-05-09 21:12:50 WARN  [security-service] Multiple failed login attempts | user_id=102 attempts=5
+2026-05-09 21:13:15 ERROR [db-service] Query timeout | query="SELECT * FROM orders" duration=5000ms
+2026-05-09 21:14:30 INFO  [system] Health check passed | status=OK
